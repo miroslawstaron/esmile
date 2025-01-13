@@ -26,20 +26,54 @@
         /* Centered text */
         .centered {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 2em;
-            font-weight: bold;
+            text-align: center;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Main heading style */
+        .centered h1 {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0.5em 0;
+        }
+
+        /* Subheading style */
+        .centered p {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+
+        /* Button style */
+        .centered a.button {
+            display: inline-block;
+            padding: 0.8em 1.5em;
+            margin-top: 1em;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF; /* Bootstrap primary blue */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button hover effect */
+        .centered a.button:hover {
+            background-color: #0056b3; /* Darker shade of blue */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="./girl.jpg" alt="Smiling person">
-        <div class="centered">Do you have a smile like this?</div>
+        <div class="centered">
+            <h1>Do you have a smile like this?</h1>
+            <p>If not, sign up for our future product here</p>
+            <a href="https://www.staron.nu" class="button" target="_blank" rel="noopener noreferrer">Sign Up</a>
+        </div>
     </div>
 </body>
 </html>
